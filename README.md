@@ -4,13 +4,13 @@ JNI Go Interface.
 A package to access Java from Go code. Can be used from a Go executable or shared library.
 This allows for Go to initiate the JVM or Java to start a Go runtime respectively.
 
-[![Go Reference](https://pkg.go.dev/badge/tekao.net/jnigi.svg)](https://pkg.go.dev/tekao.net/jnigi)
-[![Actions](https://github.com/timob/jnigi/actions/workflows/ci_test.yaml/badge.svg)](https://github.com/timob/jnigi/actions?query=branch%3Amaster)
+[![Go Reference](https://pkg.go.dev/badge/github.com/tekaonet/jnigi.svg)](https://pkg.go.dev/github.com/tekaonet/jnigi)
+[![Actions](https://github.com/tekaonet/jnigi/actions/workflows/ci_test.yaml/badge.svg)](https://github.com/tekaonet/jnigi/actions?query=branch%3Amaster)
 
 ## Install
 ``` bash
 # In your apps Go module directory
-go get tekao.net/jnigi
+go get github.com/tekaonet/jnigi
 
 # Add flags needed to include JNI header files, change this as appropriate for your JDK and OS
 export CGO_CFLAGS="-I/usr/lib/jvm/default-java/include -I/usr/lib/jvm/default-java/include/linux"
@@ -29,7 +29,7 @@ There is a function `AttemptToFindJVMLibPath() string` to help to find the libra
 Most of the code has tests. To run the tests using docker:
 ``` bash
 # get source
-git clone https://github.com/timob/jnigi.git
+git clone https://github.com/tekaonet/jnigi.git
 
 cd jnigi
 
@@ -53,7 +53,7 @@ package main
 
 import (
     "fmt"
-    "tekao.net/jnigi"
+    "github.com/tekaonet/jnigi"
     "log"
     "runtime"
 )

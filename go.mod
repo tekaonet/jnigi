@@ -1,4 +1,4 @@
-module tekao.net/jnigi
+module github.com/tekaonet/jnigi
 
 go 1.12
 
